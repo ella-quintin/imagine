@@ -119,6 +119,28 @@ Math.ceil(Math.random() * 1000000);
 1200 + '250';
 1200 + Number('250');
 
+// String concatenation
+const firstname = 'Ella'
+const lastname = 'Quintin';
+firstname + ' ' + lastname;
+// firstname. trim() + ' ' + lastname,trim();
+
+// Template literal
+`${firstname.trim()} ${lastname.trim()}`;
+
+// String methods
+firstname.length;
+lastname.length;
+`${firstname.trim()} ${lastname.trim()}`.length;
+(firstname + ' ' + lastname).length;
+firstname.toUpperCase();
+lastname.charAt(0);
+
+`${firstname.trim()} ${lastname.trim()}`.charAt(0);
+`${firstname.trim().charAt(0)}${lastname.trim().charAt(0)}`;
+
+
+
 
 
 
