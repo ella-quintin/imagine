@@ -168,6 +168,58 @@ alphabets.join(' ');
 alphabets.join(' ').split(' ');
 
 
+// write a function that will take firstname,lastname and return fullname
+
+function fullname(firstName, lastName) {
+  return `${firstName} $(lastName)`;
+}
+
+
+function fullname() {
+  return 'Ella Quintin'
+}
+
+
+const user = {
+  firstname: 'Ella',
+  lastname: 'Quintin'
+}
+
+function fullname(user) {
+  return {
+    ...user,
+    fullname: `${user.firstname} ${user.lastname}`
+  }
+}
+
+fullname(user);
+
+
+
+// Array map
+const users = [
+  {firstname: 'Linda', lastname: 'Parker'},
+  {firstname: 'Mark', lastname: 'Twaine'},
+  {firstname: 'Oliver', lastname: 'Queen'},
+  {firstname: 'Jegu', lastname: 'Laryea'},
+  {firstname: 'Supa', lastname: 'Future'}
+]
+users.map(fullname);
+
+
+// Map and return squares of numbers
+function square(number) {
+  return number ** 2;
+}
+const numbers = [0,1,2,3,4,5]
+numbers.map(square);
+
+// Filter and return even numbers
+function even(number) {
+  return number % 2 === 0
+}
+
+numbers.filter(even);
 
 
 
